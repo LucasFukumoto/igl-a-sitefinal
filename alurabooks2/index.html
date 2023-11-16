@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamingShop</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__rotulo">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
+            <img src="img/gamer-logo-design-template-37e446de36be773126cf82985342d962_screen-removebg-preview.png" alt="Logo da Alurabooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Gaming</b>Shop</h1>
+        </div>
+
+        <ul class="opções">
+            <input type="checkbox" id="opções-menu" class="opções__botão">
+            <label for="opções-menu" class="opções__rotulo">
+                <li class="opções__item">Jogos</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Aventura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">FPS</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">RPG</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Corrida</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Cassino</a>
+                </li>
+            </ul>
+
+            <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+            <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima jogatina?">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/minecraft.png" 
+                            alt="Minecraft é um jogo em que você constrói coisas com blocos, em um mundo virtual aberto e livre para explorar."></div>
+                    <div class="swiper-slide"><img src="img/Hollow_Knight_cover.webp"
+                            alt="Hollow Knight é um jogo de ação e aventura em estilo metroidvania 2D que se passa em Hallownest e Deepnest, antigos reinos fictícios."></div>
+                    <div class="swiper-slide"><img src="img/forager.jpeg"
+                            alt="Forager é um jogo de mundo aberto em 2D inspirado nos seus jogos favoritos de exploração, fazenda e criação de itens."></div>
+                    <div class="swiper-slide"><img src="img/gta 5.jpg"
+                            alt="Grand Theft Auto V Quando um malandro de rua, um ladrão de bancos aposentado e um psicopata aterrorizante se veem encrencados, eles precisam realizar uma série de golpes ousados para sobreviver em uma cidade onde não podem confiar em ninguém, nem mesmo um no outro."></div>        
+                    <div class="swiper-slide"><img src="img/dark souls remastered.jpg" alt="DARK SOULS: REMASTERED inclui o jogo principal e o DLC Artorias do Abismo. Isso marca a estréia da franquia numa plataforma da Nintendo, e o jogo pode ser jogado pela primeira vez em qualquer lugar com o Nintendo Switch™."></div>
+                    <div class="swiper-slide"><img src="img/gta sa.jpg" alt="Há cinco anos, Carl Johnson fugiu da pressão da vida em Los Santos, San Andreas, uma cidade sendo destruída por problemas com gangues, drogas e corrupção. Onde estrelas de cinema e milionários fazem o melhor que podem para evitar traficantes e bandidos."></div>
+                    <div class="swiper-slide"><img src="img/need for speed.jpg" alt="Descubra o mundo aberto noturno da cultura urbana de carros, impulsionado pelos Cinco Jeitos de Jogar, neste empolgante reboot do Need for Speed. Crie seu próprio caminho, por meio de múltiplas histórias que se entrelaçam, ganhando reputação na sua jornada para se tornar o maior ícone das ruas."></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descrição__titulo-livro">Gran turismo 7</h2>
+                        <p class="descrição__texto">Gran Turismo 7 reúne os melhores recursos do simulador de corridas online. Seja você um piloto competitivo ou casual, colecionador, tuner, designer de visuais ou fotógrafo — encontre seu caminho com um número impressionante de modos de jogo, incluindo favoritos dos fãs como Campanha GT, Arcade e Escola de Pilotagem.</p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/Gran turismo.webp" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Adicione ao Carrinho</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/minecraft.png"
+                            alt="Minecraft é um jogo em que você constrói coisas com blocos, em um mundo virtual aberto e livre para explorar."></div>
+                    <div class="swiper-slide"><img src="img/Ark_Survival_Evolved.png"
+                            alt="Ark: Survival Evolved é um game de ação em primeira pessoa, para Windows, Mac e Linux, no qual o jogador deve sobreviver em uma ilha dominada por tribos e enormes dinossauros."></div>
+                    <div class="swiper-slide"><img src="img/shadow of the colossus.png"
+                            alt="Shadow of the Colossus é uma jornada espetacular por terras antigas em busca de feras gigantes. Armado com uma espada e um arco, explore os vastos terrenos e revele cada Colossus, cada um com um desafio único para testar sua inteligência, determinação e habilidade."></div>
+                    <div class="swiper-slide"><img src="img/gta 5.jpg" alt="Grand Theft Auto V é um jogo de Quando um malandro de rua, um ladrão de bancos aposentado e um psicopata aterrorizante se veem encrencados, eles precisam realizar uma série de golpes ousados para sobreviver em uma cidade onde não podem confiar em ninguém, nem mesmo um no outro."></div>
+                    <div class="swiper-slide"><img src="img/dark souls.webp" alt="Com as chamas a desvanecerem e o mundo em ruína, viaja até um universo com inimigos e cenários colossais. Os jogadores mergulharão num mundo de trevas com uma atmosfera épica através de uma jogabilidade mais rápida e um combate ainda mais intenso."></div>
+                    <div class="swiper-slide"><img src="img/red dead redemption.jpg" alt="O jogo conta a história que se passa em 1899 em uma representação ficcional do oeste, meio-oeste e sul dos Estados Unidos e acompanha o fora da lei Arthur Morgan, que precisa lidar com o declínio do Velho Oeste e sobreviver à perseguição de forças governamentais, gangues rivais e outros adversários."></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <h3 class="descrição__titulo">Jogo mais jogado do mês</h3>
+                        <h2 class="descrição__titulo-livro">Ark Survival Evolved</h2>
+                        <p class="descrição__texto">Ark: Survival Evolved é um game de ação em primeira pessoa, para Windows, Mac e Linux, no qual o jogador deve sobreviver em uma ilha dominada por tribos e enormes dinossauros.
+                        </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/Ark_Survival_Evolved.png" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Compre Já</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tópicos">
+        <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="tópicos__lista">
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">RPG</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">MMO</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">FPS</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Aventura</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">Corrida</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">RP</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">MOBA</a>
+            </li>
+            <li class="tópicos__item">
+                <a href="#" class="tópicos__link">.IO</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de jogos, novos jogos, promoções e outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+</body>
+
+</html>
